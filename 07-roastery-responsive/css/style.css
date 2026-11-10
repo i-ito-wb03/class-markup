@@ -39,6 +39,55 @@ p {
     }
 }
 
+.gnav__list {
+    display: grid;
+    grid-auto-flow: column;
+    -moz-column-gap: 1.75rem;
+    column-gap: 1.75rem;
+}
+
+.gnav__link {
+    padding: 0.375rem 0;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.gnav__link:hover,
+.gnav__link--current {
+    border-bottom-color: #c86432;
+}
+
+.footer {
+    padding: 2rem 0 2.5rem;
+    background-color: #2c4c3e;
+}
+
+.footer__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__copyright {
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (width >=768px) {
+    .footer__copyright {
+        text-align: right;
+    }
+}
+
+.footer__copyright small {
+    font-size: 0.875rem;
+}
+
 /* utility */
 .u-show-sp {
     display: block;
