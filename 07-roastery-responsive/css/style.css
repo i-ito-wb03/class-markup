@@ -46,6 +46,11 @@ p {
     font-size: clamp(1.375rem, 3vw, 2.125rem);
     font-weight: bold;
     line-height: 1.35;
+    text-wrap: blance;
+}
+
+.intro__title span {
+    display: inline-block;
 }
 
 .intro__content {
@@ -73,6 +78,16 @@ p {
     width: 88%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.hero__image img {
+    border-radius: 25px;
+}
+
+lead-text {
+    font-weight: bold;
+    color: #2c4c3e;
+    word-break: keep-all;
 }
 
 /*# sourceMappingURL=style.css.map */
