@@ -1,0 +1,23 @@
+@use 'sass:math';
+
+$color-text: #888;
+$color-main: #202124;
+$color-accent: #fa6980;
+$color-bg: #f6f6f6;
+$color-label: #bbbbbb;
+
+$font-family-base: Helvetica,
+    Arial,
+    sans-serif;
+
+// 引数はよく変わるものを最初に設定する（このコメントは出力されない）
+@mixin inner($mw: 800px, $w: percentage(math.div(560, 640))) {
+    max-width: $mw;
+    width: $w;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 0;
+}

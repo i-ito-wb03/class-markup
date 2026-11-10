@@ -1,0 +1,8 @@
+@use 'sass:math';
+
+.box {
+  width: 100px + 50px;
+  font-size: 16px - 2px;
+  padding: 10px * 2;
+  line-height: math.div(24, 14); // 割り算 ➔ 1.7142857143
+}
