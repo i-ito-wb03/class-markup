@@ -12,6 +12,25 @@ img {
     vertical-align: bottom;
 }
 
+p {
+    text-wrap: pretty;
+}
+
+/* utility */
+.u-show-sp {
+    display: block;
+}
+
+@media (width >=768px) {
+    .u-show-sp {
+        display: none;
+    }
+}
+
+.u-keepall {
+    word-break: keep-all;
+}
+
 /* module */
 .intro__catch {
     margin-bottom: 0.75rem;
