@@ -244,14 +244,31 @@ p {
     margin-right: auto;
 }
 
+.hero__image {
+    display: block;
+    margin-bottom: 2rem;
+}
+
 .hero__image img {
-    border-radius: 25px;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.hero__body {
+    max-width: 47.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 lead-text {
     font-weight: bold;
     color: #2c4c3e;
     word-break: keep-all;
+}
+
+.concept {
+    padding: 4rem 0;
+    background-color: #f2ece1;
 }
 
 /*# sourceMappingURL=style.css.map */
