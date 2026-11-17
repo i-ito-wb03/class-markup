@@ -41,12 +41,13 @@
           <p class="intro__catch">SPECIALTY COFFEE &amp; ROASTERY</p>
           <!-- TODO [6-1 ②]: 文節ごとに <span> で囲んで inline-block で改行制御しよう -->
           <h2 class="intro__title">
-            心地よい空間で、心を満たす一杯を。
+            <span>心地よい空間で、</span>
+            <span>心を満たす一杯を。</span>
           </h2>
           <div class="intro__content">
             <!-- TODO [6-1 ①]: スマホ表示のときだけ改行する <br class="u-show-sp"> を入れよう -->
             <p>
-              最高の一杯をお届けするために、<br>厳選されたスペシャリティコーヒー豆だけを使用しています。
+              最高の一杯をお届けするために、<br class="u-show-sp">厳選されたスペシャリティコーヒー豆だけを使用しています。
             </p>
           </div>
           <a class="btn btn--center" href="./about.html">私たちについて</a>
@@ -59,6 +60,7 @@
       <div class="concept__inner">
         <!-- TODO [6-3 ③]: <picture> を使って AVIF / WebP / PNG の次世代フォーマット出し分けを実装しよう -->
         <div class="concept__pic">
+          <source type="image/webp" srcset="./images/pic_roast.webp">
           <img src="./images/pic_roast.png" alt="ヴィンテージ焙煎機で丁寧にローストされるコーヒー豆" width="560" height="400">
         </div>
 
@@ -70,7 +72,7 @@
           <div class="intro__content">
             <!-- TODO [6-1 ③]: <wbr> と word-break: keep-all で文節改行を指定しよう -->
             <p class="lead-text">
-              私たちは美味しいコーヒーを通じて、何気ない日常を特別なひとときに変えるお手伝いをします。
+              私たちは美味しいコーヒーを通じて、<wbr>何気ない日常を<wbr>特別なひとときに<wbr>変えるお手伝いをします。
             </p>
             <p>
               世界中の農園から直接買い付けたシングルオリジン豆を、その日の気温と湿度に合わせて店舗奥の焙煎機で丁寧にローストしています。
@@ -89,9 +91,9 @@
           <h2 class="intro__title">
             <span>季節のおすすめメニュー</span>
           </h2>
-          <div class="intro__content">
+          <div class="intro__content u-keepall">
             <p>
-              画面幅に応じて「1列 ➔ 2列 ➔ 3列」へメディアクエリなしで自動的に折り返すカードグリッドです。
+              画面幅に応じて<wbr>「1列 ➔ 2列 ➔ 3列」へ<wbr>メディアクエリなしで<wbr>自動的に折り返す<wbr>カードグリッドです。<wbr>https://afgagvawgagaerwgaergaerhbarehbaerhaeh.com
             </p>
           </div>
         </div>
