@@ -20,7 +20,7 @@
       <nav class="gnav">
         <ul class="gnav__list">
           <li class="gnav__item"><a class="gnav__link gnav__link--current" href="./index.html">TOP</a></li>
-          <li class="gnav__item"><a class="gnav__link" href="./about.html">ABOUT &amp; INFO</a></li>
+          <li class="gnav__item"><a class="gnav__link" href="./about.html">ABOUT & amp; INFO</a></li>
         </ul>
       </nav>
     </div>
@@ -31,9 +31,11 @@
     <section class="hero">
       <div class="hero__inner">
         <!-- TODO [6-3 ①]: <picture> を使って 700px以上で pic_hero_pc.jpg、700px未満で pic_hero_sp.jpg を出し分けよう -->
-        <div class="hero__image">
+        <picture class="hero__image">
+          <source media="(width >= 768px)" srcset="./images/pic_hero_pc.jpg">
+          <source srcset="./images/pic_hero_sp.jpg">
           <img src="./images/pic_hero_pc.jpg" alt="KOMA ROASTERYのカフェ空間とハンドドリップコーヒー" width="1200" height="520" loading="eager">
-        </div>
+        </picture>
 
         <div class="hero__body intro intro--center">
           <p class="intro__catch">SPECIALTY COFFEE &amp; ROASTERY</p>
