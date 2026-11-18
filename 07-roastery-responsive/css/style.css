@@ -296,4 +296,37 @@ p {
     }
 }
 
+.concept__pic img {
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+.menu {
+    padding: 4rem 0;
+}
+
+@media (width >=768px) {
+    .menu {
+        padding: 5rem 0;
+    }
+}
+
+.menu__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu__info {
+    max-width: 43.75rem;
+    margin: 0 auto 2.5rem;
+}
+
+.menu__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
