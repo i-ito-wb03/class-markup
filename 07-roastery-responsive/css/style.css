@@ -101,6 +101,7 @@ p {
 
 .u-keepall {
     word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 /* module */
@@ -128,6 +129,12 @@ p {
 .intro__content {
     display: grid;
     row-gap: 1rem;
+}
+
+.intro__lead {
+    font-weight: bold;
+    color: #2c4c3e;
+    word-break: keep-all;
 }
 
 .intro--center {
@@ -260,15 +267,33 @@ p {
     margin-right: auto;
 }
 
-lead-text {
-    font-weight: bold;
-    color: #2c4c3e;
-    word-break: keep-all;
-}
-
 .concept {
     padding: 4rem 0;
     background-color: #f2ece1;
+}
+
+@media (width >=768px) {
+    .concept {
+        padding: 5rem 0;
+    }
+}
+
+.concept__inner {
+    max-width: 1200px;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 2.25rem;
+    align-items: center;
+}
+
+@media (width >=768px) {
+    .concept__inner {
+        grid-template-columns: 1fr 1fr;
+        -moz-column-gap: 4rem;
+        column-gap: 4rem;
+    }
 }
 
 /*# sourceMappingURL=style.css.map */
